@@ -17,7 +17,7 @@ from jwt.exceptions import InvalidTokenError
 app = FastAPI()
 
 # Настройки базы данных
-SQLALCHEMY_DATABASE_URL = "mysql+pymysql://isp_p_Maletin:12345@77.91.86.135/isp_p_Maletin"
+SQLALCHEMY_DATABASE_URL = "mysql+pymysql://isp_r_Yudnikov:12345@77.91.86.135/isp_r_Yudnikov"
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
